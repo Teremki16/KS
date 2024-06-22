@@ -19,16 +19,19 @@
     integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.css' integrity='sha512-phGxLIsvHFArdI7IyLjv14dchvbVkEDaH95efvAae/y2exeWBQCQDpNFbOTdV1p4/pIa/XtbuDCnfhDEIXhvGQ==' crossorigin='anonymous'/>
+
 </head>
 
 <body>
   <div class="container">
     <header class="about_title">
-      <nav>
-        <span class="mama" style="color:var(--ui-dark-accent-color);font-size:42px">MD</span>
+      <div class="button">≡ </div>
+      <nav class="flex-nav">
+        <span class="mama" style="color:var(--ui-dark-accent-color);font-size:48px">MD</span>
 
         <ul class="menu">
-          <li><a href="Про мене">Про мене</a> </li>
+          <li><a href="index.html">Про мене</a> </li>
           <li><a href="Мої вміння">Мої вміння</a></li>
           <li><a href="skills.html">Мої проекти</a></li>
           <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
@@ -153,13 +156,24 @@
   </main>
   <footer>
     <h2>Maria Dumanska</h2>
-    </ul class="Footer">
-    <li><a href="" class="hg">про мене</li1a> <a href="" class="hg">мої вміння</li1a> <a href="" class="hg">мої проект
-            </li1a>
-    </li>
-    <li><a class="fab fa-facebook-square"></a></li>
+    <ul class="Footer">
+      <li><a href="" class="hg">про мене</a></li>
+      <li><a href="" class="hg">мої вміння</a></li>
+      <li><a href="" class="hg">мої проект</a></li>
+    </ul>
+    <ul class="Footer">
+      <li><a><i class="fa-brands fa-facebook"></i></a></li>
+      <li><a><i class="fa-brands fa-instagram"></i></a></li>
+      <i class="fa-brands fa-youtube"></i>
+
     </ul>
   </footer>
+
+  <script>
+    document.querySelector(".button").addEventListener("click", function(){
+    document.querySelector(".menu").classList.toggle("open")
+})
+  </script>
 </body>
 
 </html>

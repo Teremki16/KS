@@ -14,6 +14,7 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css'
     integrity='sha512-KOWhIs2d8WrPgR4lTaFgxI35LLOp5PRki/DxQvb7mlP29YZ5iJ5v8tiLWF7JLk5nDBlgPP1gHzw96cZ77oD7zQ=='
     crossorigin='anonymous' />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.css' integrity='sha512-phGxLIsvHFArdI7IyLjv14dchvbVkEDaH95efvAae/y2exeWBQCQDpNFbOTdV1p4/pIa/XtbuDCnfhDEIXhvGQ==' crossorigin='anonymous'/>
 </head>
 
 <body>
@@ -24,9 +25,9 @@
         <span class="mama" style="color:var(--ui-dark-accent-color);font-size:42px">MD</span>
 
         <ul class="menu">
-          <li><a href="Про мене">Про мене</a> </li>
+          <li><a href="index.html">Про мене</a> </li>
           <li><a href="Мої вміння">Мої вміння</a></li>
-          <li><a href="Мої проекти">Мої проекти</a></li>
+          <li><a href="skills.html">Мої проекти</a></li>
           <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
           <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
 
@@ -43,7 +44,7 @@
           <img
               src="//res2.weblium.site/res/6411d5b9841124000d169568/646b5f0e9a308a000e65e86d_optimized?nowebp" alt=""
               class="photo">
-            <div class="card1" >
+            <div class="card1 "  >
               <h2 class="text2">Huuber - досконалий паспорт вашого хвостика</h2>
               <p class="text2">Розробка стратегії розвитку для компанії Huuber, що збирає дані про домашнього улюбленця
                 в одну базу та виводить інформацію у ваш додаток. Результат - зростання продажів на 30% за перше
@@ -54,8 +55,8 @@
               src="//res2.weblium.site/res/6411d5b9841124000d169568/646b612e3d6017000f07f664_optimized?nowebp" alt=""
               class="photo">
             <div class="card2">
-              <h2 class="text2">Скрипти для сегментування клієнтської бази</h2>
-              <p>Аналітичні скрипти на Python, для компанії з продажу паперового посуду. Звіти створені для того, щоб
+              <h2 class="text3">Скрипти для сегментування клієнтської бази</h2>
+              <p class="text3">Аналітичні скрипти на Python, для компанії з продажу паперового посуду. Звіти створені для того, щоб
                 ділити клієнтів на категорії за обсягами та вартості замовлень та будувати прогнози продажів</p>
             
           </div>
@@ -76,6 +77,12 @@
 
         </ul>
       </footer>
+      
+      <script>
+        document.querySelector(".button").addEventListener("click", function(){
+        document.querySelector(".menu").classList.toggle("open")
+    })
+      </script>
 </body>
 
 </html>
